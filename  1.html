@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visual</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			background-color: #f1f1f1;
+		}
+
+		.container {
+			background-color: white;
+			padding: 20px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+		}
+
+		.fa {
+			font-size: 50px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.fa:hover {
+			color: #007bff;
+		}
+
+		#myCarousel {
+			margin-top: 20px;
+		}
+
+		.carousel-item {
+			height: 100vh;
+			min-height: 350px;
+			background: no-repeat center center scroll;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.carousel-caption {
+			bottom: 220px;
+			z-index: 10;
+		}
+
+		.carousel-caption h3 {
+			font-size: 50px;
+			font-weight: 600;
+			letter-spacing: 2px;
+			margin-top: 25px;
+		}
+
+		.carousel-caption p {
+			font-size: 20px;
+			line-height: 1.7;
+			margin-bottom: 25px;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.carousel-caption a {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			transition: 0.5s;
+			display: inline-block;
+		}
+
+		.carousel-caption a:hover {
+			background-color: #0062cc;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		@media (max-width: 768px) {
+			.carousel-caption {
+				bottom: 100px;
+			}
+
+			.carousel-caption h3 {
+				font-size: 30px;
+			}
+
+			.carousel-caption p {
+				font-size: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Visual</h1>
+				<p class="text-center">A dynamic HTML website like https://visual.kylechoy.top/</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item active" style="background-image: url('https://visual.kylechoy.top/img/1.jpg');">
+							<div class="carousel-caption">
+								<h3>First slide label</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="carousel-item" style="background-image: url('https://visual.kylechoy.top/img/2.jpg');">
+							<div class="carousel-caption">
+								<h3>Second slide label</h3>
+								<p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="carousel-item" style="background-image: url('https://visual.kylechoy.top/img/3.jpg');">
+							<div class="carousel-caption">
+								<h3>Third slide label</h3>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
